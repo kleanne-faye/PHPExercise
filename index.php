@@ -1,15 +1,16 @@
 <?php
 
 $dir = 'movies';
-$files = scander($dir);
+$files = scandir($dir);
 
 //pre_r($files)
 
 function pre_r($array) {
 	echo '<pre>';
 	print_r($array);
-	echo '</pre>'
+	echo '</pre>';
 }
+
 
 $files = array_diff($files,array('..','.'));
 
